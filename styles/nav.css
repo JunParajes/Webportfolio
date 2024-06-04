@@ -1,18 +1,82 @@
-.c-nav {
+.nav_area {
   display: flex;
   justify-content: space-between;
+  border-radius: 5rem;
+  margin-top: 1rem;
+  padding: .5rem;
 }
 
-.c-menu {
-  display: flex;
-  list-style: none;
-  gap: 2rem;
+.logo {
+  padding-left: 1.5rem;
+}
+.nav_menu {
+  display: none;
 }
 
-.c-menu-link {
+.nav_btn {
   text-decoration: none;
+  color: var(--clr-white);
 }
 
-.txt-heading {
-  display: inline;
+
+/* xs */
+/* @media (min-width: 475px) {} */
+
+/* sm */
+/* @media (min-width: 640px) {} */
+
+/* md */
+@media (min-width: 768px) {
+  .nav_area {
+    display: flex;
+    justify-content: space-between;
+    background-color: var(--clr-semiLight);
+    border: 2px solid var(--clr-light);
+    border-radius: 5rem;
+    margin-top: 1rem;
+  }
+  .hamburgerMenu {
+    display: none;
+  }
+  .nav_menu {
+    display: flex;
+    justify-content: flex-end;
+    gap: 2rem;
+    width: 75%;
+    list-style: none;
+    padding-right: 1.5rem;
+    /* border: 2px solid yellowgreen; */
+  }
 }
+
+
+/* lg */
+@media (min-width: 1024px) {
+  .nav_area {
+    display: flex;
+    justify-content: space-between;
+    background-color: var(--clr-semiLight);
+    border: 2px solid var(--clr-light);
+    border-radius: 5rem;
+    margin-top: 1rem;
+  }
+  .hamburgerMenu {
+    display: none;
+    cursor: pointer;
+  }
+  .nav_menu {
+    display: flex;
+    justify-content: flex-end;
+    gap: 4rem;
+    width: 70%;
+    list-style: none;
+    padding-right: 5rem;
+    /* border: 2px solid yellowgreen; */
+  }
+}
+
+/* xl */
+/* @media (min-width: 1280px) {} */
+
+/* 2xl */
+/* @media (min-width: 1536px) {} */

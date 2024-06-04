@@ -1,0 +1,8 @@
+.background-container {
+  width: 100%;
+  height: 1200px;
+  background-image: url('/assets/bgStyle2.png');
+  background-position:top;
+  background-repeat: no-repeat;
+  background-size: cover;
+}

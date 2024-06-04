@@ -1,6 +1,13 @@
 :root {
-  --clr-bg: #11113a;
+  /* Colore Palette */
+  --clr-dark: #11113a;
+  --clr-semiLight: #2D307E;
+  --clr-light: #5566B8;
+  --clr-white: #fafafa;
 
+
+
+  /* Sizes */
   --size-xxs: 0.5rem;
   --size-xs: 0.75rem;
   --size-sm: 0.875rem;
@@ -18,8 +25,6 @@
   --size-10xl: 10rem;
 }
 
-@import url("https://fonts.googleapis.com/css2?family=JetBrains+Mono:ital,wght@0,100..800;1,100..800&display=swap");
-
 * {
   margin: 0;
   line-height: calc(1em + 0.5rem);
@@ -30,10 +35,10 @@ html {
 }
 
 body {
-  background-color: var(--clr-bg);
-  color: white;
-  font-family: "JetBrains Mono", monospace, sans-serif;
+  background-color: var(--clr-dark);
 
+  color: white;
+  font-family: "Poppins", sans-serif;
 }
 
 button {
