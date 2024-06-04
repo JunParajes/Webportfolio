@@ -7,7 +7,8 @@ import '../styles/mobile-nav.css'
 import '../styles/style.css'
 
 
-import hamburger from './mobile-nav';
+// scripts 
 
+import hamburgerTgl from './mobile-nav';
 
-hamburger();
+hamburgerTgl();
