@@ -1,5 +1,3 @@
-// stars.js
-
 export function createStar() {
   const star = document.createElement('div');
   star.className = 'star';
@@ -20,14 +18,4 @@ export function generateStars(count) {
   }
 }
 
-export function handleMouseMove(e) {
-  const wormhole = document.getElementById('wormhole');
-  wormhole.style.left = `${e.clientX}px`;
-  wormhole.style.top = `${e.clientY}px`;
-}
 
-export function handleTouchMove(e) {
-  const wormhole = document.getElementById('wormhole');
-  wormhole.style.left = `${e.touches[0].clientX}px`;
-  wormhole.style.top = `${e.touches[0].clientY}px`;
-}

@@ -10,11 +10,8 @@ import '../styles/style.css';
 
 // Script Imports
 import hamburgerTgl from './mobile-nav';
-import { createStar, generateStars, handleMouseMove, handleTouchMove } from './stars.js';
+import { createStar, generateStars,} from './stars.js';
 
-// Event Listeners
-document.addEventListener('mousemove', handleMouseMove);
-document.addEventListener('touchmove', handleTouchMove);
 
 // Initialize Scripts
 hamburgerTgl();
