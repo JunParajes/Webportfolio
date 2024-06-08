@@ -1,5 +1,93 @@
 
+.hero {
+  display: block;
+  text-align: center;
+  /* border: 3px solid yellowgreen;  */
+  height: 20rem;
+}
 
+.myName {
+  font-size: small;
+}
+
+.title {
+  font-family: "Rubik Mono One", monospace;
+  font-size: var(--size-2xl)
+}
+
+
+/* xs */
+@media (min-width: 475px) {
+  .myName {
+    font-size: larger;
+  }
+  
+  .title {
+    font-family: "Rubik Mono One", monospace;
+    font-size: var(--size-4xl)
+  }
+}
+
+
+/* sm */
+@media (min-width: 640px) {
+  .myName {
+    font-size: x-large;
+  }
+  
+  .title {
+    font-family: "Rubik Mono One", monospace;
+    font-size: var(--size-5xl)
+  }
+}
+
+/* md */
+@media (min-width: 768px) {
+  .myName {
+    font-size: var(--size-2xl);
+  }
+  
+  .title {
+    font-family: "Rubik Mono One", monospace;
+    font-size: var(--size-6xl)
+  }
+}
+
+/* lg */
+@media (min-width: 1024px) {
+  .myName {
+    font-size: var(--size-4xl);
+  }
+  
+  .title {
+    font-family: "Rubik Mono One", monospace;
+    font-size: var(--size-7xl)
+  }
+}
+
+/* xl */
+@media (min-width: 1280px) {
+  .myName {
+    font-size: var(--size-4xl);
+  }
+  
+  .title {
+    font-family: "Rubik Mono One", monospace;
+    font-size: var(--size-8xl)
+  }
+}
+
+/* 2xl */
+@media (min-width: 1536px) {
+  .myName {
+    font-size: var(--size-4xl);
+  }
+  
+  .title {
+    font-family: "Rubik Mono One", monospace;
+    font-size: var(--size-8xl)
+  }
+}
 
 
 
