@@ -1,33 +1,72 @@
-.hero {
-  display: block;
-  text-align: center;
-  height: 20rem;
-}
-
-.myName {
-  font-size: var(--size-base);
-}
-
-.title {
-  font-family: "Fira Sans Condensed", monospace;
-  font-size: var(--size-2xl);
-}
-
-.hero_btn {
-  border: 1px solid var(--clr-white);
-  border-radius: 10px;
-  font-size: var(--size-base);
-  padding: 1rem;
-}
-
 /* Responsive Styles */
-@media (min-width: 768px) {
-  .title {
-    font-size: var(--size-4xl);
+@media (min-width: 475px) {
+  .hero {
+    display: block;
+    text-align: center;
+    height: 20rem;
   }
-
+  
   .myName {
-    font-size: var(--size-lg);
+    font-size: var(--size-base);
+  }
+  
+  .title {
+    font-family: "Fira Sans Condensed", monospace;
+    font-size: var(--size-6xl);
+  }
+  
+  .hero_btn {
+    border: 1px solid var(--clr-white);
+    border-radius: 10px;
+    font-size: var(--size-base);
+    padding: 1rem;
+  }
+}
+
+@media (min-width: 640px) {
+  .hero {
+    display: block;
+    text-align: center;
+    height: 20rem;
+  }
+  
+  .myName {
+    font-size: var(--size-xl);
+  }
+  
+  .title {
+    font-family: "Fira Sans Condensed", monospace;
+    font-size: var(--size-7xl);
+  }
+  .hero_btn {
+    border: 1px solid var(--clr-white);
+    border-radius: 10px;
+    font-size: var(--size-base);
+    padding: 1rem;
+  }
+}
+
+@media (min-width: 768px) {
+  .hero {
+    display: block;
+    text-align: center;
+    height: 20rem;
+  }
+  
+  .myName {
+    font-size: var(--size-xl);
+  }
+  
+  .title {
+    font-family: "Fira Sans Condensed", monospace;
+    font-size: var(--size-7xl);
+  }
+  
+  .hero_btn {
+    border: 1px solid var(--clr-white);
+    border-radius: 10px;
+    font-size: var(--size-base);
+    padding: 1rem;
   }
 }
 
