@@ -3,12 +3,13 @@
   justify-content: space-between;
   border-radius: 5rem;
   margin-top: 1rem;
-  padding: .5rem;
+  padding: 0.5rem;
 }
 
 .logo {
   padding-left: 1.5rem;
 }
+
 .nav_menu {
   display: none;
 }
@@ -18,25 +19,17 @@
   color: var(--clr-white);
 }
 
+.hamburgerMenu {
+  display: block;
+  cursor: pointer;
+}
 
-/* xs */
-/* @media (min-width: 475px) {} */
+.mobile_navigation {
+  display: none;
+}
 
-/* sm */
-/* @media (min-width: 640px) {} */
-
-/* md */
+/* Responsive Styles */
 @media (min-width: 768px) {
-  .nav_area {
-    display: flex;
-    justify-content: space-between;
-    background-color: rgba(255, 255, 255, 40%);
-    border-radius: 5rem;
-    margin-top: 1rem;
-  }
-  .hamburgerMenu {
-    display: none;
-  }
   .nav_menu {
     display: flex;
     justify-content: flex-end;
@@ -45,34 +38,16 @@
     list-style: none;
     padding-right: 1.5rem;
   }
-}
 
-
-/* lg */
-@media (min-width: 1024px) {
-  .nav_area {
-    display: flex;
-    justify-content: space-between;
-    background-color: rgba(255, 255, 255, 40%);
-    border-radius: 5rem;
-    margin-top: 1rem;
-  }
   .hamburgerMenu {
     display: none;
-    cursor: pointer;
-  }
-  .nav_menu {
-    display: flex;
-    justify-content: flex-end;
-    gap: 4rem;
-    width: 70%;
-    list-style: none;
-    padding-right: 5rem;      
   }
 }
 
-/* xl */
-/* @media (min-width: 1280px) {} */
-
-/* 2xl */
-/* @media (min-width: 1536px) {} */
+@media (min-width: 1024px) {
+  .nav_menu {
+    gap: 4rem;
+    width: 70%;
+    padding-right: 5rem;
+  }
+}

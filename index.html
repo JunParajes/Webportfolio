@@ -3,109 +3,96 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!-- Fonts {Fira Sans Condensed & Poppins } -->
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link
-      href="https://fonts.googleapis.com/css2?family=JetBrains+Mono:ital,wght@0,100..800;1,100..800&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
+      href="https://fonts.googleapis.com/css2?family=Fira+Sans+Condensed:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900&display=swap"
       rel="stylesheet" />
-    <title>Portfolio</title>
+    <title>Jun Parajes</title>
   </head>
   <body>
     <!-- Background Moving Stars -->
     <div class="stars" id="stars"></div>
-    <div class="wormhole" id="wormhole"></div>
     <!-- END of Moving Stars -->
 
-    <!-- Navigation Area -->
-    <nav class="container nav_area">
-      <h3 class="logo">&#123;J_P&#125;</h3>
-      <ul class="nav_menu">
-        <li>
-          <a class="nav_btn" href="home">Home</a>
-        </li>
-        <li>
-          <a class="nav_btn" href="about">About</a>
-        </li>
-        <li>
-          <a class="nav_btn" href="resume">Resume</a>
-        </li>
-        <li>
-          <a class="nav_btn" href="hireMe">Hire Me</a>
-        </li>
-      </ul>
-      <button class="hamburgerMenu menu_toggler" id="navToggle">
-        <svg
-          xmlns="http://www.w3.org/2000/svg"
-          height="24px"
-          viewBox="0 -960 960 960"
-          width="24px"
-          fill="#fafafa">
-          <path
-            d="M120-240v-80h720v80H120Zm0-200v-80h720v80H120Zm0-200v-80h720v80H120Z" />
-        </svg>
-      </button>
-    </nav>
+    <!-- Navigation Section-->
+    <header>
+      <nav class="container nav_area">
+        <h3 class="logo">&#123;J_P&#125;</h3>
+        <ul class="nav_menu">
+          <li><a class="nav_btn" href="#home">Home</a></li>
+          <li><a class="nav_btn" href="#about">About</a></li>
+          <li><a class="nav_btn" href="#resume">Resume</a></li>
+          <li><a class="nav_btn" href="#hireMe">Hire Me</a></li>
+        </ul>
+        <button class="hamburgerMenu menu_toggler" id="navToggle">
+          <svg
+            xmlns="http://www.w3.org/2000/svg"
+            height="24px"
+            viewBox="0 -960 960 960"
+            width="24px"
+            fill="#fafafa">
+            <path d="M120-240v-80h720v80H120Zm0-200v-80h720v80H120Zm0-200v-80h720v80H120Z" />
+          </svg>
+        </button>
+      </nav>
+    </header>
     <!-- END of Navigation -->
 
     <!-- Mobile Navigation for smaller screens (m means mobile in class names) -->
     <div class="mobile_navigation" id="mobileNav">
       <nav class="m_menu">
         <ul class="m_nav">
-          <li>
-            <a class="m_nav_btn" href="">Home</a>
-          </li>
-          <li>
-            <a class="m_nav_btn" href="">About</a>
-          </li>
-          <li>
-            <a class="m_nav_btn" href="">Resume</a>
-          </li>
-          <li>
-            <a class="m_nav_btn" href="">Hire Me</a>
-          </li>
+          <li><a class="m_nav_btn" href="#home">Home</a></li>
+          <li><a class="m_nav_btn" href="#about">About</a></li>
+          <li><a class="m_nav_btn" href="#resume">Resume</a></li>
+          <li><a class="m_nav_btn" href="#hireMe">Hire Me</a></li>
         </ul>
       </nav>
     </div>
     <!-- END of Mobile Navigation -->
 
     <!-- Hero Section -->
-    <section class="container hero section">
-      <h3 class="myName" >Hello! I'm Jun Parajes</h3>
-      <h1 class="title">FRONT-END <br> WEB DEVELOPER</h1>
-      <button class="hero_btn" >Hire Me</button>
-    </section>
-    <!-- END of Hero Section -->
+    <main>
+      <section class="container hero section" id="home">
+        <h3 class="myName">Hello! I'm Jun Parajes</h3>
+        <h1 class="title">FRONT-END<br />WEB DEVELOPER</h1>
+        <button class="hero_btn">Hire Me</button>
+      </section>
+      <!-- END of Hero Section -->
 
-    <!-- About Me Section -->
-    <section class="container section">
-      <h3>ABOUT ME</h3>
-      <p>
-        I am a passionate and dedicated Front-End Web Developer with a strong
-        foundation in HTML, CSS, and JavaScript. With expertise in creating
-        responsive and visually appealing websites, I thrive on transforming
-        design concepts into functional and engaging digital experiences. I am
-        proficient in version control using Git and GitHub, ensuring seamless
-        collaboration and code management. I am eager to contribute my skills
-        and creativity to a dynamic team and continue growing as a developer.
-      </p>
-    </section>
-    <!-- End of About Me Section -->
+      <!-- About Me Section -->
+      <section class="container section" id="about">
+        <h3>ABOUT ME</h3>
+        <p>
+          I am a passionate and dedicated Front-End Web Developer with a strong
+          foundation in HTML, CSS, and JavaScript. With expertise in creating
+          responsive and visually appealing websites, I thrive on transforming
+          design concepts into functional and engaging digital experiences. I am
+          proficient in version control using Git and GitHub, ensuring seamless
+          collaboration and code management. I am eager to contribute my skills
+          and creativity to a dynamic team and continue growing as a developer.
+        </p>
+      </section>
+      <!-- End of About Me Section -->
 
-    <!-- Resume Section -->
-    <section class="container section">
-      <h3>Resume</h3>
+      <!-- Resume Section -->
+      <section class="container section" id="resume">
+        <h3>Resume</h3>
         <p>
           Lorem ipsum dolor sit amet consectetur adipisicing elit. Perspiciatis
-        dolores aliquid odit facere alias officiis, dolorem beatae expedita sint
-        culpa obcaecati. Facilis repudiandae labore laborum assumenda. Ea
-        asperiores reiciendis nisi vel quibusdam sunt excepturi iusto quis
-        corporis aperiam! Fugiat temporibus, at expedita aspernatur et voluptates
-        saepe exercitationem explicabo quibusdam eveniet aperiam a, sed eos
-        laborum velit vitae quod porro hic aliquid necessitatibus animi. Enim
-        veniam, exercitationem nam porro qui nemo id iste totam saepe explicabo
-        est consequuntur quasi odit molestias!
+          dolores aliquid odit facere alias officiis, dolorem beatae expedita sint
+          culpa obcaecati. Facilis repudiandae labore laborum assumenda. Ea
+          asperiores reiciendis nisi vel quibusdam sunt excepturi iusto quis
+          corporis aperiam! Fugiat temporibus, at expedita aspernatur et
+          voluptates saepe exercitationem explicabo quibusdam eveniet aperiam a,
+          sed eos laborum velit vitae quod porro hic aliquid necessitatibus animi.
+          Enim veniam, exercitationem nam porro qui nemo id iste totam saepe
+          explicabo est consequuntur quasi odit molestias!
         </p>
-    </section>
+      </section>
+    </main>
     <script type="module" src="src/main.js"></script>
   </body>
 </html>

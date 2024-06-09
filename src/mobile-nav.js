@@ -1,9 +1,7 @@
-// I will not be doing the arrow function 
-
 function hamburgerTgl() {
   const burgerBtn = document.getElementById('navToggle');
   const mobileNav = document.getElementById('mobileNav');
-  const mobileLinks = document.querySelectorAll('nav_btn');
+  const mobileLinks = document.querySelectorAll('.m_nav_btn');
 
   let toggler = false;
 
@@ -12,9 +10,8 @@ function hamburgerTgl() {
     if (toggler) {
       mobileNav.style.display = 'flex';
       document.body.style.overflowY = 'hidden';
-    } 
-    else {
-      mobileNav.style.display = "none";
+    } else {
+      mobileNav.style.display = 'none';
       document.body.style.overflowY = 'auto';
     }
   });
@@ -24,14 +21,8 @@ function hamburgerTgl() {
       toggler = false;
       mobileNav.style.display = 'none';
       document.body.style.overflowY = 'auto';
-    })
+    });
   });
-  console.log(hamburgerTgl);
-  console.log(mobileLinks);
 }
-  
-
-
-
 
 export default hamburgerTgl;

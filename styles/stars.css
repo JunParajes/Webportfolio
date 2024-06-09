@@ -3,7 +3,7 @@ body {
   padding: 0;
   background: black;
   color: white;
-  font-family: 'Poppins', sans-serif;
+  font-family: "Poppins", sans-serif;
 }
 
 .stars {
@@ -26,18 +26,18 @@ body {
 
 @keyframes twinkling {
   0%, 100% {
-      opacity: 0.8;
+    opacity: 0.8;
   }
   50% {
-      opacity: 1;
+    opacity: 1;
   }
 }
 
 @keyframes move-stars {
   from {
-      transform: translateY(1000px);
+    transform: translateY(1000px);
   }
   to {
-      transform: translateY(-1000px);
+    transform: translateY(-1000px);
   }
 }

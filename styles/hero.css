@@ -1,127 +1,53 @@
-
 .hero {
   display: block;
   text-align: center;
-  /* border: 3px solid yellowgreen;  */
   height: 20rem;
 }
 
 .myName {
-  font-size: small;
+  font-size: var(--size-base);
 }
 
 .title {
-  font-family: "Rubik Mono One", monospace;
-  font-size: var(--size-2xl)
+  font-family: "Fira Sans Condensed", monospace;
+  font-size: var(--size-2xl);
 }
 
 .hero_btn {
-  border: 1px solid white;
+  border: 1px solid var(--clr-white);
   border-radius: 10px;
-  font-size: medium;
+  font-size: var(--size-base);
   padding: 1rem;
 }
 
-/* xs */
-@media (min-width: 475px) {
-  .myName {
-    font-size: larger;
-  }
-  
-  .title {
-    font-family: "Rubik Mono One", monospace;
-    font-size: var(--size-4xl)
-  }
-}
-
-
-/* sm */
-@media (min-width: 640px) {
-  .myName {
-    font-size: x-large;
-  }
-  
-  .title {
-    font-family: "Rubik Mono One", monospace;
-    font-size: var(--size-5xl)
-  }
-}
-
-/* md */
+/* Responsive Styles */
 @media (min-width: 768px) {
+  .title {
+    font-size: var(--size-4xl);
+  }
+
+  .myName {
+    font-size: var(--size-lg);
+  }
+}
+
+@media (min-width: 1024px) {
+  .title {
+    font-size: var(--size-6xl);
+  }
+
   .myName {
     font-size: var(--size-2xl);
   }
-  
-  .title {
-    font-family: "Rubik Mono One", monospace;
-    font-size: var(--size-6xl)
-  }
 }
 
-/* lg */
-@media (min-width: 1024px) {
-  .myName {
-    font-size: var(--size-4xl);
-  }
-  
-  .title {
-    font-family: "Rubik Mono One", monospace;
-    font-size: var(--size-7xl)
-  }
-}
-
-/* xl */
 @media (min-width: 1280px) {
+  .title {
+    font-size: var(--size-8xl);
+  }
+
   .myName {
     font-size: var(--size-4xl);
-  }
-  
-  .title {
-    font-family: "Rubik Mono One", monospace;
-    font-size: var(--size-8xl)
+    font-family: "Poppins", monospace;
   }
 }
-
-/* 2xl */
-@media (min-width: 1536px) {
-  .myName {
-    font-size: var(--size-4xl);
-  }
-  
-  .title {
-    font-family: "Rubik Mono One", monospace;
-    font-size: var(--size-8xl)
-  }
-}
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-/* xs */
-/* @media (min-width: 475px) {} */
-
-/* sm */
-/* @media (min-width: 640px) {} */
-
-/* md */
-/* @media (min-width: 768px) {} */
-
-/* lg */
-/* @media (min-width: 1024px) {} */
-
-/* xl */
-/* @media (min-width: 1280px) {} */
-
-/* 2xl */
-/* @media (min-width: 1536px) {} */
