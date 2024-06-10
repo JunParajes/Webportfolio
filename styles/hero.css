@@ -1,3 +1,24 @@
+/* Base Style */
+.hero{
+  display: block;
+  text-align: center;
+  height: 20rem;
+}
+.myName {
+  font-size: var(--size-base);
+}
+
+.title {
+  font-family: "Fira Sans Condensed", monospace;
+  font-size: var(--size-5xl);
+}
+
+.hero_btn {
+  border: 1px solid var(--clr-white);
+  border-radius: 10px;
+  font-size: var(--size-base);
+  padding: 1rem;
+}
 /* Responsive Styles */
 @media (min-width: 475px) {
   .hero {

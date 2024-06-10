@@ -6,6 +6,7 @@ import '../styles/bg.css';
 import '../styles/hero.css';
 import '../styles/mobile-nav.css';
 import '../styles/stars.css';
+import '../styles/about.css';
 import '../styles/style.css';
 
 // Script Imports

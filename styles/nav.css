@@ -1,3 +1,4 @@
+/* Base Styeling */
 .nav_area {
   display: flex;
   justify-content: space-between;
@@ -5,6 +6,10 @@
   border-radius: 5rem;
   margin-top: 1rem;
   padding: 0.5rem;
+}
+.logo {
+  width: 3rem;
+  margin-left: 1rem;
 }
 
 .nav_menu {
@@ -19,12 +24,14 @@
 .hamburgerMenu {
   display: block;
   cursor: pointer;
-  margin-right: 1.5rem;
+  margin-right: 1rem;
 }
 
 .mobile_navigation {
   display: none;
 }
+
+/* END Of Base Styeling */
 
 /* Responsive Styles */
 @media (min-width: 475px) {
@@ -67,3 +74,6 @@
     padding-right: 5rem;
   }
 }
+
+/* @media (min-width: 1280px) {} */
+/* @media (min-width: 1536px) {} */
