@@ -50,12 +50,16 @@
     border-color: black;
   }
 }
-
+.hero_btn_container {
+  display: flex;
+  justify-content: center;
+}
 .hero_btn {
   border: 1px solid var(--clr-white);
   border-radius: 10px;
   font-size: var(--size-base);
   padding: 1rem;
+  width: 11rem;
 }
 
 /* Responsive Styles */

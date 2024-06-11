@@ -1,3 +1,9 @@
+.header_about_laptop {
+  display: none;
+}
+.cont_grid {
+  display: none;
+}
 .flip-card {
   background-color: transparent;
   width: 25rem;
@@ -83,6 +89,66 @@
       width: 200px;
       height: 200px;
       border-radius: 50%;
-      margin-top: 20px;
+  }
+}
+
+@media (min-width: 1024px) {
+  .header_about_laptop {
+    display: flex;
+    justify-content: center;
+    font-size: var(--size-4xl);
+  }
+  .cont_grid {
+    display: grid;
+    justify-items: center;
+    align-items: center;
+    grid-template-columns: 60% 40%;
+    grid-template-rows: 1fr 1fr;
+    height: 40rem;
+    background-color: rgba(255, 255, 255, 0.15);
+    backdrop-filter: blur(5px);
+    border-radius: 25px;
+  }
+  .cell {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border: 3px transparent;
+    padding: 1rem;
+  }
+  .cell3 {
+    grid-column: span 2;
+    margin-left: 16px;
+    margin-right: 16px;
+  }
+  .paragraph_1 {
+    text-align: justify;
+    font-size: var(--size-xl);
+  }
+  .my_pic_1 {
+    width: 80%;
+    height: 95%;
+    border-radius: 24%;
+  }
+
+  .flip-card {
+    display: none;
+  }
+}
+@media (min-width: 1280px) {
+  .cont_grid {
+    display: grid;
+    justify-items: center;
+    align-items: center;
+    grid-template-columns: 60% 40%;
+    grid-template-rows: 1fr 1fr;
+    height: 47rem;
+    background-color: rgba(255, 255, 255, 0.15);
+    backdrop-filter: blur(5px);
+    border-radius: 25px;
+  }
+  .paragraph_1 {
+    text-align: justify;
+    font-size: var(--size-2xl);
   }
 }

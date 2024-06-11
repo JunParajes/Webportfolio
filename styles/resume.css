@@ -1,0 +1,19 @@
+.sub_heading_resume {
+  display: flex;
+  justify-content: center;
+  font-size: var(--size-3xl);
+}
+.cont_resume {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 10px;
+}
+.html {
+  background-color: rgba(255,255,255,0.15);
+}
+.css {
+  background-color: rgba(255,255,255,0.15);
+}
+.java_script {
+  background-color: rgba(255,255,255,0.15);
+}
