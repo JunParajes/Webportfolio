@@ -5,15 +5,29 @@
 }
 .cont_resume {
   display: grid;
+  width: 100%;
+  height: 25rem;
+  justify-items: center;
   grid-template-columns: repeat(3, 1fr);
-  gap: 10px;
+  gap: 15px;
 }
-.html {
-  background-color: rgba(255,255,255,0.15);
+.html_container, .css_container, .java_script_container {
+  display: flex;
+  align-items: center;
+  justify-content: center; /* Center content horizontally */
+  background-color: rgba(255, 255, 255, 0.15);
 }
-.css {
-  background-color: rgba(255,255,255,0.15);
-}
-.java_script {
-  background-color: rgba(255,255,255,0.15);
+
+/* Responsive Styles */
+@media (max-width: 768px) {
+  .cont_resume {
+    grid-template-columns: 1fr; /* Change to a single column */
+    grid-template-rows: auto; /* Allow rows to adjust automatically */
+    height: auto; /* Adjust height to fit content */
+  }
+
+  .html_container, .css_container, .java_script_container {
+    width: 100%; /* Make containers full width */
+    margin-bottom: 15px; /* Add space between items */
+  }
 }
