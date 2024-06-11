@@ -1,16 +1,54 @@
 /* Base Style */
-.hero{
-  display: block;
+.hero {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
   text-align: center;
   height: 20rem;
 }
+
 .myName {
   font-size: var(--size-base);
+}
+
+.typing-container {
+  display: inline-block; /* Make the container inline-block */
+  overflow: hidden; /* Ensure only part of the text is visible */
+  white-space: nowrap; /* Prevent text wrapping */
+  border-right: 0.15em solid black; /* Cursor effect */
+  animation: typing 4s steps(30, end) infinite, blink-caret 0.75s step-end infinite;
 }
 
 .title {
   font-family: "Fira Sans Condensed", monospace;
   font-size: var(--size-5xl);
+  margin: 0; /* Remove margin */
+}
+
+@keyframes typing {
+  0% {
+    width: 0;
+  }
+  70% {
+    width: 100%;
+  }
+  90% {
+    width: 100%; /* Keep it at full width for a moment */
+  }
+  100% {
+    width: 0; /* Reset width back to 0 */
+  }
+}
+
+@keyframes blink-caret {
+  from,
+  to {
+    border-color: transparent;
+  }
+  50% {
+    border-color: black;
+  }
 }
 
 .hero_btn {
@@ -19,6 +57,7 @@
   font-size: var(--size-base);
   padding: 1rem;
 }
+
 /* Responsive Styles */
 @media (min-width: 475px) {
   .hero {
@@ -26,16 +65,16 @@
     text-align: center;
     height: 20rem;
   }
-  
+
   .myName {
     font-size: var(--size-base);
   }
-  
+
   .title {
     font-family: "Fira Sans Condensed", monospace;
     font-size: var(--size-6xl);
   }
-  
+
   .hero_btn {
     border: 1px solid var(--clr-white);
     border-radius: 10px;
@@ -50,11 +89,11 @@
     text-align: center;
     height: 20rem;
   }
-  
+
   .myName {
     font-size: var(--size-xl);
   }
-  
+
   .title {
     font-family: "Fira Sans Condensed", monospace;
     font-size: var(--size-7xl);
@@ -73,16 +112,16 @@
     text-align: center;
     height: 20rem;
   }
-  
+
   .myName {
     font-size: var(--size-xl);
   }
-  
+
   .title {
     font-family: "Fira Sans Condensed", monospace;
     font-size: var(--size-7xl);
   }
-  
+
   .hero_btn {
     border: 1px solid var(--clr-white);
     border-radius: 10px;

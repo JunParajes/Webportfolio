@@ -51,7 +51,7 @@
               height="70px"
               viewBox="0 -960 960 960"
               width="70px"
-              fill="#000000">
+              fill="#fafafa">
               <path
                 d="M240-200h120v-240h240v240h120v-360L480-740 240-560v360Zm-80 80v-480l320-240 320 240v480H520v-240h-80v240H160Zm320-350Z" />
             </svg>
@@ -63,7 +63,7 @@
               height="70px"
               viewBox="0 -960 960 960"
               width="70px"
-              fill="#000000">
+              fill="#fafafa">
               <path
                 d="M480-481q-66 0-108-42t-42-108q0-66 42-108t108-42q66 0 108 42t42 108q0 66-42 108t-108 42ZM160-160v-94q0-38 19-65t49-41q67-30 128.5-45T480-420q62 0 123 15.5t127.92 44.69q31.3 14.13 50.19 40.97Q800-292 800-254v94H160Zm60-60h520v-34q0-16-9.5-30.5T707-306q-64-31-117-42.5T480-360q-57 0-111 11.5T252-306q-14 7-23 21.5t-9 30.5v34Zm260-321q39 0 64.5-25.5T570-631q0-39-25.5-64.5T480-721q-39 0-64.5 25.5T390-631q0 39 25.5 64.5T480-541Zm0-90Zm0 411Z" />
             </svg>
@@ -75,7 +75,7 @@
               height="70px"
               viewBox="0 -960 960 960"
               width="70px"
-              fill="#000000">
+              fill="#fafafa">
               <path
                 d="M319-250h322v-60H319v60Zm0-170h322v-60H319v60ZM220-80q-24 0-42-18t-18-42v-680q0-24 18-42t42-18h361l219 219v521q0 24-18 42t-42 18H220Zm331-554v-186H220v680h520v-494H551ZM220-820v186-186 680-680Z" />
             </svg>
@@ -87,7 +87,7 @@
               height="70px"
               viewBox="0 -960 960 960"
               width="70px"
-              fill="#000000">
+              fill="#fafafa">
               <path
                 d="M730-400v-130H600v-60h130v-130h60v130h130v60H790v130h-60Zm-370-81q-66 0-108-42t-42-108q0-66 42-108t108-42q66 0 108 42t42 108q0 66-42 108t-108 42ZM40-160v-94q0-35 17.5-63.5T108-360q75-33 133.34-46.5t118.5-13.5Q420-420 478-406.5T611-360q33 15 51 43t18 63v94H40Zm60-60h520v-34q0-16-9-30.5T587-306q-71-33-120-43.5T360-360q-58 0-107.5 10.5T132-306q-15 7-23.5 21.5T100-254v34Zm260-321q39 0 64.5-25.5T450-631q0-39-25.5-64.5T360-721q-39 0-64.5 25.5T270-631q0 39 25.5 64.5T360-541Zm0-90Zm0 411Z" />
             </svg>
@@ -100,28 +100,61 @@
 
     <!-- Hero Section -->
     <main>
-      <section class="container hero section" id="home">
-        <h3 class="myName">Hello! I'm Jun Parajes</h3>
-        <h1 class="title">FRONT-END<br />WEB DEVELOPER</h1>
-        <button class="hero_btn">Hire Me</button>
+      <section class="container section">
+        <div class="hero">
+          <h3 class="myName">Hello! I'm Jun Parajes</h3>
+          <div class="typing-container">
+            <h1 class="title">FRONT-END<br />WEB DEVELOPER</h1>
+          </div>
+        </div>
       </section>
       <!-- END of Hero Section -->
 
       <!-- About Me Section -->
-      <section class="container section" id="about">
-        <div class="about_bg">
-          <h3>ABOUT ME</h3>
-          <p class="paragraph" >
-            I am a passionate and dedicated Front-End Web Developer with a strong
-            foundation in HTML, CSS, and JavaScript. With expertise in creating
-            responsive and visually appealing websites, I thrive on transforming
-            design concepts into functional and engaging digital experiences. I am
-            proficient in version control using Git and GitHub, ensuring seamless
-            collaboration and code management. I am eager to contribute my skills
-            and creativity to a dynamic team and continue growing as a developer.
-          </p>
+      <section class="container cont_grid section" id="about">
+        <div class="flip-card" onclick="toggleFlip()">
+          <div class="flip-card-inner" id="flipCardInner">
+            <div class="flip-card-front">
+              <div class="about_bg">
+                <h1 class="sub_heading">ABOUT ME</h1><br>
+                <p class="paragraph">
+                  I am a passionate and dedicated Front-End Web Developer with a
+                  strong foundation in HTML, CSS, and JavaScript. With expertise in
+                  creating responsive and visually appealing websites, I thrive on
+                  transforming design concepts into functional and engaging digital
+                  experiences. I am proficient in version control using Git and
+                  GitHub, ensuring seamless collaboration and code management. I am
+                  eager to contribute my skills and creativity to a dynamic team and
+                  continue growing as a developer.
+                  <br><br>
+                  My goal is to become a Full Stack Web Developer, and I am
+                  committed to expanding my knowledge and skills to achieve
+                  this. I am eager to contribute my expertise and creativity to
+                  a dynamic team and continue growing as a developer. <em>(CLICK ME TO SEE BACK)</em>
+                </p>
+              </div>
+            </div>
+            <div class="flip-card-back">
+              <h1 class="sub_heading">ABOUT ME</h1>
+              <br><br>
+              <p class="paragraph">
+                I adhere to standard naming conventions such as BEM (Block,
+                Element, Modifier) to maintain clean, scalable, and
+                understandable code. I am proficient in version control using
+                Git and GitHub, ensuring seamless collaboration and efficient
+                code management. I am continuously learning and staying updated
+                with the latest industry trends and technologies.
+              </p> <br> <br>
+              <img class="my_pic" src="/assets/mypic.jpeg" alt="Your Photo" />
+            </div>
+          </div>
         </div>
-
+        <script>
+          function toggleFlip() {
+            const card = document.getElementById("flipCardInner");
+            card.classList.toggle("flipped");
+          }
+        </script>
       </section>
       <!-- End of About Me Section -->
 
