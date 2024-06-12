@@ -31,6 +31,10 @@ html {
   scroll-behavior: smooth;
 }
 
+header {
+  width: 100%;
+}
+
 body {
   color: var(--clr-white);
   font-family: "Poppins", sans-serif;
