@@ -1,33 +1,117 @@
-.sub_heading_resume {
-  display: flex;
-  justify-content: center;
-  font-size: var(--size-3xl);
-}
-.cont_resume {
-  display: grid;
-  width: 100%;
+.flip_card_html {
+  background-color: transparent;
+  width: 25rem;
   height: 25rem;
-  justify-items: center;
-  grid-template-columns: repeat(3, 1fr);
-  gap: 15px;
+  perspective: 1000px;
+  margin: auto;
 }
-.html_container, .css_container, .java_script_container {
-  display: flex;
-  align-items: center;
-  justify-content: center; /* Center content horizontally */
+.flip_card_inner_html {
+  position: relative;
+  width: 100%;
+  height: 100%;
+  text-align: center;
+  transition: transform 0.6s;
+  transform-style: preserve-3d;
+}
+.flipped {
+  transform: rotateY(180deg);
+}
+.flip_card_front_html, .flip_card_back_html {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  backface-visibility: hidden;
   background-color: rgba(255, 255, 255, 0.15);
+  border-radius: 15px;
+  color: white;
+  padding: 20px;
+  box-sizing: border-box;
+  overflow: hidden;
+  backdrop-filter: blur(3px);
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center; 
+}
+.flip_card_back_html {
+  transform: rotateY(180deg);
 }
 
-/* Responsive Styles */
-@media (max-width: 768px) {
-  .cont_resume {
-    grid-template-columns: 1fr; /* Change to a single column */
-    grid-template-rows: auto; /* Allow rows to adjust automatically */
-    height: auto; /* Adjust height to fit content */
-  }
-
-  .html_container, .css_container, .java_script_container {
-    width: 100%; /* Make containers full width */
-    margin-bottom: 15px; /* Add space between items */
-  }
+/* CSS */
+.flip_card_css {
+  background-color: transparent;
+  width: 25rem;
+  height: 25rem;
+  perspective: 1000px;
+  margin: auto;
+}
+.flip_card_inner_css {
+  position: relative;
+  width: 100%;
+  height: 100%;
+  text-align: center;
+  transition: transform 0.6s;
+  transform-style: preserve-3d;
+}
+.flipped {
+  transform: rotateY(180deg);
+}
+.flip_card_front_css, .flip_card_back_css {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  backface-visibility: hidden;
+  background-color: rgba(255, 255, 255, 0.15);
+  border-radius: 15px;
+  color: white;
+  padding: 20px;
+  box-sizing: border-box;
+  overflow: hidden;
+  backdrop-filter: blur(3px);
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center; 
+}
+.flip_card_back_css {
+  transform: rotateY(180deg);
+}
+/* JavaScript */
+.flip_card_js {
+  background-color: transparent;
+  width: 25rem;
+  height: 25rem;
+  perspective: 1000px;
+  margin: auto;
+}
+.flip_card_inner_js {
+  position: relative;
+  width: 100%;
+  height: 100%;
+  text-align: center;
+  transition: transform 0.6s;
+  transform-style: preserve-3d;
+}
+.flipped {
+  transform: rotateY(180deg);
+}
+.flip_card_front_js, .flip_card_back_js {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  backface-visibility: hidden;
+  background-color: rgba(255, 255, 255, 0.15);
+  border-radius: 15px;
+  color: white;
+  padding: 20px;
+  box-sizing: border-box;
+  overflow: hidden;
+  backdrop-filter: blur(3px);
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center; 
+}
+.flip_card_back_js {
+  transform: rotateY(180deg);
 }
