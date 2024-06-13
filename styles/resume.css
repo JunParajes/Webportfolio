@@ -180,7 +180,7 @@
 }
 
 .item13 {
-  animation-delay: calc(40s / 13 * (13- 13) * -1);
+  animation-delay: calc(40s / 13 * (13 - 13) * -1);
 }
 
 /* Projects */
