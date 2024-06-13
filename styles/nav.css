@@ -9,8 +9,10 @@
   width: calc(100% - 1rem);
   border-radius: 5rem;
   padding: 0.5rem;
-  background-color: rgba(255,255,255,0.15);
-  backdrop-filter: blur(10px);
+  background-color: rgba(255,255,255,0.1);
+  border: 2px solid rgba(255,255,255,0.7);
+  box-shadow: -15px 17px 17px rgba(10,10,10,0.25);
+  backdrop-filter: blur(25px);
   left: 50%;
   transform: translateX(-50%);
   max-width: 1536px;

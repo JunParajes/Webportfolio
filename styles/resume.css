@@ -1,11 +1,35 @@
-.flip_card_html {
+@import url("https://fonts.cdnfonts.com/css/ocr-a-std");
+
+.sub_heading_resume {
+  text-align: center;
+  margin-bottom: 2rem;
+}
+
+/* Grid Container */
+.grid_container {
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: 2rem;
+  justify-items: center;
+}
+
+@media (min-width: 768px) {
+  .grid_container {
+    grid-template-columns: repeat(3, 1fr);
+  }
+}
+
+/* Flip Card Base Styles */
+.flip_card {
   background-color: transparent;
-  width: 25rem;
+  width: 100%;
+  max-width: 25rem;
   height: 25rem;
   perspective: 1000px;
   margin: auto;
 }
-.flip_card_inner_html {
+
+.flip_card_inner {
   position: relative;
   width: 100%;
   height: 100%;
@@ -13,50 +37,13 @@
   transition: transform 0.6s;
   transform-style: preserve-3d;
 }
+
 .flipped {
-  transform: rotateY(180deg);
-}
-.flip_card_front_html, .flip_card_back_html {
-  position: absolute;
-  width: 100%;
-  height: 100%;
-  backface-visibility: hidden;
-  background-color: rgba(255, 255, 255, 0.15);
-  border-radius: 15px;
-  color: white;
-  padding: 20px;
-  box-sizing: border-box;
-  overflow: hidden;
-  backdrop-filter: blur(3px);
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center; 
-}
-.flip_card_back_html {
   transform: rotateY(180deg);
 }
 
-/* CSS */
-.flip_card_css {
-  background-color: transparent;
-  width: 25rem;
-  height: 25rem;
-  perspective: 1000px;
-  margin: auto;
-}
-.flip_card_inner_css {
-  position: relative;
-  width: 100%;
-  height: 100%;
-  text-align: center;
-  transition: transform 0.6s;
-  transform-style: preserve-3d;
-}
-.flipped {
-  transform: rotateY(180deg);
-}
-.flip_card_front_css, .flip_card_back_css {
+.flip_card_front,
+.flip_card_back {
   position: absolute;
   width: 100%;
   height: 100%;
@@ -71,47 +58,249 @@
   display: flex;
   flex-direction: column;
   justify-content: center;
-  align-items: center; 
+  align-items: center;
 }
-.flip_card_back_css {
+
+.flip_card_back {
   transform: rotateY(180deg);
 }
-/* JavaScript */
-.flip_card_js {
-  background-color: transparent;
-  width: 25rem;
-  height: 25rem;
-  perspective: 1000px;
-  margin: auto;
+
+/* Specific Flip Card Styles */
+/* .flip_card_html .flip_card_front {
+
 }
-.flip_card_inner_js {
+
+.flip_card_html .flip_card_back {
+
+}
+
+.flip_card_css .flip_card_front {
+
+}
+
+.flip_card_css .flip_card_back {
+
+}
+
+.flip_card_js .flip_card_front {
+
+}
+
+.flip_card_js .flip_card_back {
+
+} */
+
+/* Infinite Scroll */
+.infinite_scroll_container {
   position: relative;
-  width: 100%;
-  height: 100%;
-  text-align: center;
-  transition: transform 0.6s;
-  transform-style: preserve-3d;
-}
-.flipped {
-  transform: rotateY(180deg);
-}
-.flip_card_front_js, .flip_card_back_js {
-  position: absolute;
-  width: 100%;
-  height: 100%;
-  backface-visibility: hidden;
-  background-color: rgba(255, 255, 255, 0.15);
-  border-radius: 15px;
-  color: white;
-  padding: 20px;
-  box-sizing: border-box;
+  width: 90%;
+  margin-inline: auto;
+  height: 100px;
+  margin-top: 2rem;
+  margin-bottom: 2rem;
   overflow: hidden;
-  backdrop-filter: blur(3px);
+  mask-image: linear-gradient(
+    to right,
+    rgba(0, 0, 0, 0),
+    rgba(0, 0, 0, 1) 20%,
+    rgba(0, 0, 0, 1) 80%,
+    rgba(0, 0, 0, 0)
+  );
+}
+@keyframes scrollLeft {
+  to {
+    left: -200px;
+  }
+}
+.infinite_scroll_container .item {
+  position: absolute;
+  width: 200px;
+  height: 100px;
+  background-color: rgba(255, 255, 255, 0.1);
+  border: 2px solid rgba(255, 255, 255, 0.7);
+  /* box-shadow: -15px 17px 17px rgba(10,10,10,0.25); */
+  backdrop-filter: blur(25px);
+  border-radius: 6px;
+  left: max(calc(200px * 13), 100%);
+  animation-name: scrollLeft;
+  animation-duration: 40s;
+  animation-timing-function: linear;
+  animation-iteration-count: infinite;
   display: flex;
-  flex-direction: column;
   justify-content: center;
-  align-items: center; 
+  align-items: center;
 }
-.flip_card_back_js {
-  transform: rotateY(180deg);
+
+.item1 {
+  animation-delay: calc(40s / 13 * (13 - 1) * -1);
 }
+
+.item2 {
+  animation-delay: calc(40s / 13 * (13 - 2) * -1);
+}
+
+.item3 {
+  animation-delay: calc(40s / 13 * (13 - 3) * -1);
+}
+
+.item4 {
+  animation-delay: calc(40s / 13 * (13 - 4) * -1);
+}
+
+.item5 {
+  animation-delay: calc(40s / 13 * (13 - 5) * -1);
+}
+
+.item6 {
+  animation-delay: calc(40s / 13 * (13 - 6) * -1);
+}
+
+.item7 {
+  animation-delay: calc(40s / 13 * (13 - 7) * -1);
+}
+
+.item8 {
+  animation-delay: calc(40s / 13 * (13 - 8) * -1);
+}
+
+.item9 {
+  animation-delay: calc(40s / 13 * (13 - 9) * -1);
+}
+
+.item10 {
+  animation-delay: calc(40s / 13 * (13 - 10) * -1);
+}
+
+.item11 {
+  animation-delay: calc(40s / 13 * (13 - 11) * -1);
+}
+
+.item12 {
+  animation-delay: calc(40s / 13 * (13 - 12) * -1);
+}
+
+.item13 {
+  animation-delay: calc(40s / 13 * (13- 13) * -1);
+}
+
+/* Projects */
+/* ------------------------------------------------------------------------------------------------------------- */
+.projects_container {
+  display: flex;
+  justify-content: center;
+  margin-top: 3rem;
+}
+.debit_card {
+  position: relative;
+  display: flex;
+  background-color: rgba(255, 255, 255, 0.1);
+  backdrop-filter: blur(10px);
+  border-radius: 50px;
+  width: 33rem;
+  height: 20rem;
+  margin-bottom: 3rem;
+}
+.debit_card h3 {
+  position: absolute;
+  font-family: Arial, Helvetica, sans-serif;
+  font-weight: 300;
+  left: 3rem;
+  top: 2rem;
+}
+.debit_card .bank_name {
+  position: absolute;
+  font-family: Arial, Helvetica, sans-serif;
+  font-style: italic;
+  font-weight:500;
+  right: 3rem;
+  top: 2rem;
+}
+.debit_card .card_chip {
+  position: absolute;
+  left: 3rem;
+  top: 4.5rem;
+}
+.debit_card .card_number {
+  position: absolute;
+  font-family: 'OCR A Std', sans-serif;
+  left: 3rem;
+  top: 10.5rem;
+}
+.debit_card .card_expire {
+  position: absolute;
+  font-family: Arial, Helvetica, sans-serif;
+  font-weight: 200;
+  line-height: 15px;
+  left: 3rem;
+  top: 13rem;
+}
+.debit_card .card_expire_date {
+  position: absolute;
+  font-family: Arial, Helvetica, sans-serif;
+  font-weight: 400;
+  left: 6rem;
+  top: 13rem;
+}
+.debit_card .card_name {
+  position: absolute;
+  font-family: Arial, Helvetica, sans-serif;
+  font-weight: 200;
+  word-spacing: 5px;
+  left: 3rem;
+  top: 16rem;
+}
+.debit_card .master_card {
+  position: fixed;
+  right: 5rem;
+  top: 14rem;
+  border-radius: 50%;
+  width: 55px;
+  height: 55px;
+  background-color: rgba(255, 255, 255, 0.50);
+}
+.debit_card .master_card2 {
+  position: fixed;
+  right: 2.7rem;
+  top: 14rem;
+  border-radius: 50%;
+  width: 55px;
+  height: 55px;
+  background-color: rgba(255, 255, 255, 0.25);
+}
+
+/* END of Projects */
+/* ------------------------------------------------------------------------------------------------------------- */
+/* Media Queries */
+
+/* md */
+@media (min-width: 768px) {
+  .flip_card {
+    width: 13rem;
+    height: 13rem;
+  }
+}
+
+/* lg */
+@media (min-width: 1024px) {
+  .flip_card {
+    width: 19rem;
+    height: 19rem;
+  }
+}
+
+/* xl */
+@media (min-width: 1280px) {
+  .flip_card {
+    width: 24rem;
+    height: 24rem;
+  }
+}
+
+/* 2xl */
+@media (min-width: 1536px) {
+  .flip_card {
+    width: 25rem;
+    height: 25rem;
+  }
+}
+

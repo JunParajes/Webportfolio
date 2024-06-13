@@ -8,6 +8,7 @@ import '../styles/mobile-nav.css';
 import '../styles/stars.css';
 import '../styles/about.css';
 import '../styles/resume.css';
+import '../styles/footer.css';
 import '../styles/style.css';
 
 // Script Imports
