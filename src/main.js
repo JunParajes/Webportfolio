@@ -1,15 +1,15 @@
 // CSS Imports
 import '../styles/modern-normalize.css';
-import '../styles/nav.css';
-import '../styles/utils.css';
-import '../styles/bg.css';
-import '../styles/hero.css';
-import '../styles/mobile-nav.css';
-import '../styles/stars.css';
-import '../styles/about.css';
-import '../styles/resume.css';
+import '../styles/media_queries.css';
 import '../styles/footer.css';
-import '../styles/style.css';
+import '../styles/8.resume.css';
+import '../styles/7.about_me.css';
+import '../styles/6.hero.css';
+import '../styles/5.mobile_navigation.css';
+import '../styles/4.navigation.css';
+import '../styles/3.bg_stars.css';
+import '../styles/2.utils.css';
+import '../styles/1.style.css';
 
 // Script Imports
 import hamburgerTgl from './mobile-nav';

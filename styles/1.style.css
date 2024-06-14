@@ -31,10 +31,13 @@ html {
   scroll-behavior: smooth;
 }
 
-
 body {
   color: var(--clr-white);
   font-family: "Poppins", sans-serif;
+}
+
+html, body {
+  overflow-x: hidden;
 }
 
 button {
