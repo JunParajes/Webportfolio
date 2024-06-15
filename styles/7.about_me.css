@@ -65,7 +65,6 @@
 .paragraph {
   font-size: var(--size-sm);
   text-align:center;
-  /* text-indent: 2em; */
 }
 
 .my_pic {

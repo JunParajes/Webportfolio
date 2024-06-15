@@ -20,35 +20,16 @@
 
     <!-- Navigation Section-->
     <header>
-      <nav class="container">
-        <div class="nav_area" id="navArea">
-          <button><img class="logo" src="assets/logoJP.png" /></button>
-          <ul class="nav_menu">
-            <li><a class="nav_btn" href="#home">Home</a></li>
-            <li><a class="nav_btn" href="#about">About</a></li>
-            <li><a class="nav_btn" href="#resume">Resume</a></li>
-            <li><a class="nav_btn" href="#hireMe">Hire Me</a></li>
-          </ul>
-          <button class="hamburgerMenu menu_toggler" id="navToggle"></button>
-        </div>
+      <nav class="nav_area" id="navArea">
+        <button><img class="logo" src="assets/logoJP.png" /></button>
+        <ul class="nav_menu">
+          <li><a class="nav_btn" href="#home">Home</a></li>
+          <li><a class="nav_btn" href="#about">About</a></li>
+          <li><a class="nav_btn" href="#resume">Resume</a></li>
+          <li><a class="nav_btn" href="#hireMe">Hire Me</a></li>
+        </ul>
+        <button class="hamburgerMenu menu_toggler" id="navToggle"></button>
       </nav>
-      <script>
-        let lastScrollTop = 0;
-        const navArea = document.getElementById("navArea");
-
-        window.addEventListener("scroll", function () {
-          const scrollTop =
-            window.pageYOffset || document.documentElement.scrollTop;
-          if (scrollTop > lastScrollTop) {
-            // Downscroll
-            navArea.style.top = "-95px"; // Adjust this value based on the height of your nav
-          } else {
-            // Upscroll
-            navArea.style.top = "0";
-          }
-          lastScrollTop = scrollTop <= 0 ? 0 : scrollTop; // For Mobile or negative scrolling
-        });
-      </script>
     </header>
     <!-- END of Navigation -->
 
@@ -118,7 +99,7 @@
     <!-- Hero Section -->
     <main>
       <br />
-      <section class="container section" id="home">
+      <section class="container section page_container" id="home">
         <div class="hero">
           <h3 class="myName">Hello! I'm Jun Parajes</h3>
           <div class="typing-container">
@@ -133,7 +114,7 @@
 
       <!-- About Me Section -->
       <section class="container section" id="about">
-        <div class="flip-card" onclick="toggleFlip()">
+        <div class="flip-card" id="flipCard">
           <div class="flip-card-inner" id="flipCardInner">
             <div class="flip-card-front">
               <div class="about_bg">
@@ -146,7 +127,8 @@
                   GitHub for collaboration and version control, ensuring smooth
                   and efficient teamwork. I love coding, and it has become a
                   hobby of mine.
-                  <br /> <br>
+                  <br />
+                  <br />
                 </p>
                 <p class="paragraph">
                   While my ultimate goal is to become a full stack developer, I
@@ -177,15 +159,8 @@
             </div>
           </div>
         </div>
-        <script>
-          function toggleFlip() {
-            const card = document.getElementById("flipCardInner");
-            card.classList.toggle("flipped");
-          }
-        </script>
-
         <!-- For laptops -->
-        <h1 class="header_about_laptop">--- ABOUT ME ---</h1>
+        <h1 class="header_about_laptop">ABOUT ME</h1>
         <br />
         <div class="container cont_grid">
           <p class="paragraph_1 cell">
@@ -219,9 +194,9 @@
 
       <!-- Resume Section -->
       <section class="container section" id="resume">
-        <h1 class="sub_heading_resume">Resume</h1>
+        <h1 class="sub_heading_resume">RESUME</h1>
         <div class="grid_container">
-          <div class="flip_card flip_card_html" onclick="toggleFlipHtml()">
+          <div class="flip_card flip_card_html" id="flipCardHtml">
             <div class="flip_card_inner" id="flipCardInnerHtml">
               <div class="flip_card_front flip_card_front_html">
                 <svg
@@ -275,11 +250,17 @@
                   </g>
                 </svg>
               </div>
-              <div class="flip_card_back flip_card_back_html"></div>
+              <div class="flip_card_back flip_card_back_html">
+                <strong>CAPABLE OF:</strong><br>
+                HTML 5 <br>
+                Semantics HTML <br>
+                Responsive Web Design using meta <br>
+                SVG > Images
+              </div>
             </div>
           </div>
 
-          <div class="flip_card flip_card_css" onclick="toggleFlipCss()">
+          <div class="flip_card flip_card_css" id="flipCardCss">
             <div class="flip_card_inner" id="flipCardInnerCss">
               <div class="flip_card_front flip_card_front_css">
                 <svg
@@ -330,11 +311,17 @@
                   </g>
                 </svg>
               </div>
-              <div class="flip_card_back flip_card_back_css"></div>
+              <div class="flip_card_back flip_card_back_css">
+                <strong>CAPABLE OF:</strong><br>
+                CSS 3 <br>
+                Flex Box & Grid <br>
+                Media Queries <br>
+                Animation & Transition <br>                
+              </div>
             </div>
           </div>
 
-          <div class="flip_card flip_card_js" onclick="toggleFlipJs()">
+          <div class="flip_card flip_card_js" id="flipCardJs">
             <div class="flip_card_inner" id="flipCardInnerJs">
               <div class="flip_card_front flip_card_front_js">
                 <svg
@@ -367,28 +354,17 @@
                   </g>
                 </svg>
               </div>
-              <div class="flip_card_back flip_card_back_js"></div>
+              <div class="flip_card_back flip_card_back_js">
+                <strong>CAPABLE OF:</strong><br>
+                JavaScript ES6+ <br>
+                Dom Manipulation <br>
+                All the basics: <br>
+                Variables, Array, Loops, and etc... <br>   
+              </div>
             </div>
           </div>
-          <script>
-            function toggleFlipHtml() {
-              const cardHtml = document.getElementById("flipCardInnerHtml");
-              cardHtml.classList.toggle("flipped");
-            }
-
-            function toggleFlipCss() {
-              const cardCss = document.getElementById("flipCardInnerCss");
-              cardCss.classList.toggle("flipped");
-            }
-
-            function toggleFlipJs() {
-              const cardJs = document.getElementById("flipCardInnerJs");
-              cardJs.classList.toggle("flipped");
-            }
-          </script>
         </div>
       </section>
-
       <div class="container">
         <h1>Tools I Use</h1>
         <div class="infinite_scroll_container">
@@ -416,7 +392,7 @@
                 </svg>
               </div>
               <div class="card_flip_back">
-                <h5>backside</h5>
+                <h1>Git</h1>
               </div>
             </div>
           </div>
@@ -463,7 +439,7 @@
                 </svg>
               </div>
               <div class="card_flip_back">
-                <h5>backside</h5>
+                <h1>GitHub</h1>
               </div>
             </div>
           </div>
@@ -491,7 +467,7 @@
                 </svg>
               </div>
               <div class="card_flip_back">
-                <h5>backside</h5>
+                <h1>Terminal</h1>
               </div>
             </div>
           </div>
@@ -518,7 +494,7 @@
                 </svg>
               </div>
               <div class="card_flip_back">
-                <h5>backside</h5>
+                <h3>Node Package Manager</h3>
               </div>
             </div>
           </div>
@@ -547,7 +523,7 @@
                 </svg>
               </div>
               <div class="card_flip_back">
-                <h5>backside</h5>
+                <h1>VS Code</h1>
               </div>
             </div>
           </div>
@@ -583,7 +559,7 @@
                 </svg>
               </div>
               <div class="card_flip_back">
-                <h5>backside</h5>
+                <h1>Photoshop</h1>
               </div>
             </div>
           </div>
@@ -615,7 +591,7 @@
                 </svg>
               </div>
               <div class="card_flip_back">
-                <h5>backside</h5>
+                <h1>Vercel</h1>
               </div>
             </div>
           </div>
@@ -643,7 +619,7 @@
                 </svg>
               </div>
               <div class="card_flip_back">
-                <h5>backside</h5>
+                <h1>WordPress</h1>
               </div>
             </div>
           </div>
@@ -687,7 +663,7 @@
                 </svg>
               </div>
               <div class="card_flip_back">
-                <h5>backside</h5>
+                <h1>Name Cheap</h1>
               </div>
             </div>
           </div>
@@ -756,7 +732,7 @@
                 </svg>
               </div>
               <div class="card_flip_back">
-                <h5>backside</h5>
+                <h1>Canva</h1>
               </div>
             </div>
           </div>
@@ -821,7 +797,7 @@
                 </svg>
               </div>
               <div class="card_flip_back">
-                <h5>backside</h5>
+                <h1>Vite</h1>
               </div>
             </div>
           </div>
@@ -843,7 +819,7 @@
                 </svg>
               </div>
               <div class="card_flip_back">
-                <h5>backside</h5>
+                <h2>Chat GPT 4o</h2>
               </div>
             </div>
           </div>
@@ -890,13 +866,13 @@
                 </svg>
               </div>
               <div class="card_flip_back">
-                <h5>backside</h5>
+                <h1>MAC OS</h1>
               </div>
             </div>
           </div>
         </div>
         <script>
-          document.querySelectorAll(".card_flip").forEach(function (cardD) {
+          document.querySelectorAll(".card_flip").forEach( cardD => {
             cardD.addEventListener("click", function () {
               this.classList.toggle("touch");
             });
@@ -904,40 +880,7 @@
         </script>
         <h1>Projects</h1>
         <div class="projects_container">
-          <div class="debit_card">
-            <h3 class="debit_card_name">Debit Card</h3>
-            <h2 class="bank_name">Bank Name</h2>
-            <svg
-              class="card_chip"
-              width="70px"
-              height="65px"
-              viewBox="0 0 1024 1024"
-              class="icon"
-              version="1.1"
-              xmlns="http://www.w3.org/2000/svg"
-              fill="#ffffff">
-              <g id="SVGRepo_bgCarrier" stroke-width="0"></g>
-              <g
-                id="SVGRepo_tracerCarrier"
-                stroke-linecap="round"
-                stroke-linejoin="round"></g>
-              <g id="SVGRepo_iconCarrier">
-                <path
-                  d="M106.666667 746.666667V277.333333c0-46.933333 38.4-85.333333 85.333333-85.333333h640c46.933333 0 85.333333 38.4 85.333333 85.333333v469.333334c0 46.933333-38.4 85.333333-85.333333 85.333333H192c-46.933333 0-85.333333-38.4-85.333333-85.333333z"
-                  fill="#eeaa44"></path>
-                <path
-                  d="M917.333333 448v-42.666667H661.333333c-23.466667 0-42.666667-19.2-42.666666-42.666666s19.2-42.666667 42.666666-42.666667h21.333334v-42.666667h-21.333334c-46.933333 0-85.333333 38.4-85.333333 85.333334s38.4 85.333333 85.333333 85.333333h64v128h-64c-59.733333 0-106.666667 46.933333-106.666666 106.666667s46.933333 106.666667 106.666666 106.666666h42.666667v-42.666666h-42.666667c-36.266667 0-64-27.733333-64-64s27.733333-64 64-64h256v-42.666667h-149.333333v-128h149.333333zM362.666667 576h-64v-128h64c46.933333 0 85.333333-38.4 85.333333-85.333333s-38.4-85.333333-85.333333-85.333334h-64v42.666667h64c23.466667 0 42.666667 19.2 42.666666 42.666667s-19.2 42.666667-42.666666 42.666666H106.666667v42.666667h149.333333v128H106.666667v42.666667h256c36.266667 0 64 27.733333 64 64s-27.733333 64-64 64h-42.666667v42.666666h42.666667c59.733333 0 106.666667-46.933333 106.666666-106.666666s-46.933333-106.666667-106.666666-106.666667z"
-                  fill="#000000"></path>
-              </g>
-            </svg>
-
-            <h2 class="card_number">0123 4567 8901 2345</h2>
-            <h5 class="card_expire">Valid<br />Thru</h5>
-            <h3 class="card_expire_date">03/24</h3>
-            <h3 class="card_name">Ethelredo Parajes Jr</h3>
-            <div class="master_card"></div>
-            <div class="master_card2"></div>
-          </div>
+          <img class="debit_card" src="assets/debit_card.png" alt="" />
         </div>
       </div>
     </main>

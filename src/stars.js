@@ -1,4 +1,4 @@
-export function createStar() {
+export const createStar = () => {
   const star = document.createElement('div');
   star.className = 'star';
   const size = Math.random() * 3 + 1;
@@ -11,11 +11,12 @@ export function createStar() {
   return star;
 }
 
-export function generateStars(count) {
+export const generateStars = count => {
   const starsContainer = document.getElementById('stars');
   for (let i = 0; i < count; i++) {
     starsContainer.appendChild(createStar());
   }
 }
+
 
 

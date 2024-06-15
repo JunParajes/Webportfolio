@@ -3,6 +3,8 @@
 .sub_heading_resume {
   text-align: center;
   margin-bottom: 2rem;
+  font-size: var(--size-2xl);
+  font-weight: bold;
 }
 
 /* Grid Container */
@@ -50,6 +52,7 @@
   backface-visibility: hidden;
   background-color: rgba(255, 255, 255, 0.15);
   border-radius: 15px;
+  border: 1px solid white;
   color: white;
   padding: 20px;
   box-sizing: border-box;
@@ -68,27 +71,27 @@
 /* Specific Flip Card Styles */
 /* .flip_card_html .flip_card_front {
 
-}
+} */
 
 .flip_card_html .flip_card_back {
-
+  font-size: var(--size-xl);
 }
 
-.flip_card_css .flip_card_front {
-
-}
-
-.flip_card_css .flip_card_back {
-
-}
-
-.flip_card_js .flip_card_front {
-
-}
-
-.flip_card_js .flip_card_back {
+/* .flip_card_css .flip_card_front {
 
 } */
+
+.flip_card_css .flip_card_back {
+  font-size: var(--size-xl);
+}
+
+/* .flip_card_js .flip_card_front {
+
+} */
+
+.flip_card_js .flip_card_back {
+  font-size: var(--size-xl);
+}
 
 /* Infinite Scroll */
 .infinite_scroll_container {
@@ -189,18 +192,16 @@
   display: flex;
   justify-content: center;
   margin-top: 3rem;
+
 }
 .debit_card {
-  position: relative;
-  display: flex;
-  background-color: rgba(255, 255, 255, 0.1);
+  background-color: rgba(255, 255, 255, 0.15);
   backdrop-filter: blur(10px);
-  border-radius: 50px;
-  width: 35rem;
-  height: 20rem;
-  margin-bottom: 3rem;
+  border-radius: 20px;
+  width: 100%;
+  height: auto;
 }
-.debit_card h3 {
+/* .debit_card h3 {
   position: absolute;
   font-family: Arial, Helvetica, sans-serif;
   font-weight: 300;
@@ -248,8 +249,8 @@
   word-spacing: 5px;
   left: 3rem;
   top: 16rem;
-}
-.debit_card .master_card {
+} */
+/* .debit_card .master_card {
   position: fixed;
   right: 5rem;
   top: 14rem;
@@ -266,7 +267,7 @@
   width: 4rem;
   height: 4rem;
   background-color: rgba(255, 255, 255, 0.25);
-}
+} */
 
 /* END of Projects */
 /* ------------------------------------------------------------------------------------------------------------- */

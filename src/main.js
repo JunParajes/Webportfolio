@@ -12,13 +12,23 @@ import '../styles/2.utils.css';
 import '../styles/1.style.css';
 
 // Script Imports
-import hamburgerTgl from './mobile-nav';
-import { createStar, generateStars,} from './stars.js';
+import {hamburgerTgl} from './mobile-nav'; //This script is the menu button for mobile screens to open navigation
+import {createStar, generateStars} from './stars.js'; // Background moving stars
+import  {navHider}  from './nav_hider.js';
+import { toggleFlip, toggleFlipHtml, toggleFlipCss, toggleFlipJs } from './flip_cards.js';
 
+//event listener 
+document.getElementById('flipCard').addEventListener('click', toggleFlip);
+document.getElementById('flipCardHtml').addEventListener('click', toggleFlipHtml);
+document.getElementById('flipCardCss').addEventListener('click', toggleFlipCss);
+document.getElementById('flipCardJs').addEventListener('click', toggleFlipJs);
 
 // Initialize Scripts
 hamburgerTgl();
+createStar();
 generateStars(500);
+navHider();
+
 
 
 

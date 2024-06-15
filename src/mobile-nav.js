@@ -1,4 +1,4 @@
-function hamburgerTgl() {
+export const hamburgerTgl = () => {
   const burgerBtn = document.getElementById('navToggle');
   const mobileNav = document.getElementById('mobileNav');
   const mobileLinks = document.querySelectorAll('.m_nav_btn');
@@ -41,5 +41,3 @@ function hamburgerTgl() {
     });
   });
 }
-
-export default hamburgerTgl;
