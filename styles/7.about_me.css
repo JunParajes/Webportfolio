@@ -57,11 +57,6 @@
   padding: 20px;
 }
 
-.sub_heading {
-  font-size: var(--size-2xl);
-  font-weight: bold;
-}
-
 .paragraph {
   font-size: var(--size-sm);
   text-align:center;

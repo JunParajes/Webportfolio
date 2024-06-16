@@ -2,6 +2,7 @@
 import '../styles/modern-normalize.css';
 import '../styles/media_queries.css';
 import '../styles/footer.css';
+import '../styles/9.hire_me.css';
 import '../styles/8.resume.css';
 import '../styles/7.about_me.css';
 import '../styles/6.hero.css';
@@ -22,6 +23,12 @@ document.getElementById('flipCard').addEventListener('click', toggleFlip);
 document.getElementById('flipCardHtml').addEventListener('click', toggleFlipHtml);
 document.getElementById('flipCardCss').addEventListener('click', toggleFlipCss);
 document.getElementById('flipCardJs').addEventListener('click', toggleFlipJs);
+
+document.querySelectorAll(".card_flip").forEach( cardD => {
+  cardD.addEventListener("click", function () {
+    this.classList.toggle("touch");
+  });
+});
 
 // Initialize Scripts
 hamburgerTgl();

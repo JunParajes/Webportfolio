@@ -1,12 +1,5 @@
 @import url("https://fonts.cdnfonts.com/css/ocr-a-std");
 
-.sub_heading_resume {
-  text-align: center;
-  margin-bottom: 2rem;
-  font-size: var(--size-2xl);
-  font-weight: bold;
-}
-
 /* Grid Container */
 .grid_container {
   display: grid;
@@ -196,78 +189,12 @@
 }
 .debit_card {
   background-color: rgba(255, 255, 255, 0.15);
-  backdrop-filter: blur(10px);
-  border-radius: 20px;
+  backdrop-filter: blur(8px);
+  border: 2px solid white;
+  border-radius:25px;
   width: 100%;
   height: auto;
 }
-/* .debit_card h3 {
-  position: absolute;
-  font-family: Arial, Helvetica, sans-serif;
-  font-weight: 300;
-  left: 3rem;
-  top: 2rem;
-}
-.debit_card .bank_name {
-  position: absolute;
-  font-family: Arial, Helvetica, sans-serif;
-  font-style: italic;
-  font-weight:500;
-  right: 3rem;
-  top: 2rem;
-}
-.debit_card .card_chip {
-  position: absolute;
-  left: 3rem;
-  top: 4.5rem;
-}
-.debit_card .card_number {
-  position: absolute;
-  font-family: 'OCR A Std', sans-serif;
-  left: 3rem;
-  top: 10.5rem;
-}
-.debit_card .card_expire {
-  position: absolute;
-  font-family: Arial, Helvetica, sans-serif;
-  font-weight: 200;
-  line-height: 15px;
-  left: 3rem;
-  top: 13rem;
-}
-.debit_card .card_expire_date {
-  position: absolute;
-  font-family: Arial, Helvetica, sans-serif;
-  font-weight: 400;
-  left: 6rem;
-  top: 13rem;
-}
-.debit_card .card_name {
-  position: absolute;
-  font-family: Arial, Helvetica, sans-serif;
-  font-weight: 200;
-  word-spacing: 5px;
-  left: 3rem;
-  top: 16rem;
-} */
-/* .debit_card .master_card {
-  position: fixed;
-  right: 5rem;
-  top: 14rem;
-  border-radius: 50%;
-  width: 4rem;
-  height: 4rem;
-  background-color: rgba(255, 255, 255, 0.50);
-}
-.debit_card .master_card2 {
-  position: fixed;
-  right: 2.7rem;
-  top: 14rem;
-  border-radius: 50%;
-  width: 4rem;
-  height: 4rem;
-  background-color: rgba(255, 255, 255, 0.25);
-} */
 
 /* END of Projects */
 /* ------------------------------------------------------------------------------------------------------------- */
