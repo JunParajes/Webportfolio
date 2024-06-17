@@ -80,15 +80,17 @@
             <a class="m_nav_btn" href="#resume">Resume</a>
           </div>
           <div class="hireMe_btn">
-            <svg
-              xmlns="http://www.w3.org/2000/svg"
-              height="70px"
-              viewBox="0 -960 960 960"
-              width="70px"
-              fill="#fafafa">
-              <path
-                d="M730-400v-130H600v-60h130v-130h60v130h130v60H790v130h-60Zm-370-81q-66 0-108-42t-42-108q0-66 42-108t108-42q66 0 108 42t42 108q0 66-42 108t-108 42ZM40-160v-94q0-35 17.5-63.5T108-360q75-33 133.34-46.5t118.5-13.5Q420-420 478-406.5T611-360q33 15 51 43t18 63v94H40Zm60-60h520v-34q0-16-9-30.5T587-306q-71-33-120-43.5T360-360q-58 0-107.5 10.5T132-306q-15 7-23.5 21.5T100-254v34Zm260-321q39 0 64.5-25.5T450-631q0-39-25.5-64.5T360-721q-39 0-64.5 25.5T270-631q0 39 25.5 64.5T360-541Zm0-90Zm0 411Z" />
-            </svg>
+            <a class="m_nav_btn" href="#hireMe">
+              <svg
+                xmlns="http://www.w3.org/2000/svg"
+                height="70px"
+                viewBox="0 -960 960 960"
+                width="70px"
+                fill="#fafafa">
+                <path
+                  d="M730-400v-130H600v-60h130v-130h60v130h130v60H790v130h-60Zm-370-81q-66 0-108-42t-42-108q0-66 42-108t108-42q66 0 108 42t42 108q0 66-42 108t-108 42ZM40-160v-94q0-35 17.5-63.5T108-360q75-33 133.34-46.5t118.5-13.5Q420-420 478-406.5T611-360q33 15 51 43t18 63v94H40Zm60-60h520v-34q0-16-9-30.5T587-306q-71-33-120-43.5T360-360q-58 0-107.5 10.5T132-306q-15 7-23.5 21.5T100-254v34Zm260-321q39 0 64.5-25.5T450-631q0-39-25.5-64.5T360-721q-39 0-64.5 25.5T270-631q0 39 25.5 64.5T360-541Zm0-90Zm0 411Z" />
+              </svg>
+            </a>
             <a class="m_nav_btn" href="#hireMe">Hire Me</a>
           </div>
         </div>
@@ -882,12 +884,20 @@
           Status: Under construction
         </h4>
         <div class="projects_container">
-          <img class="debit_card" src="assets/debit_card.png" alt="" />
+          <div class="flip_card flip_card_dc" id="flipCardDc">
+            <div class="flip_card_inner" id="flipCardInnerDc">
+              <div class="flip_card_front  ">
+                <img class="debit_card" src="assets/debit_card.png" alt="" />
+              </div>
+            </div>
+          </div>
         </div>
+        <div class="flip_card_back flip_card_back_dc">BACK</div>
       </div>
       <br />
       <section class="container hire_me" id="hireMe">
         <h2 class="sub_heading">Hire Me!</h2>
+        <br />
         <div class="contacts">
           <ul>
             <li>
@@ -935,7 +945,9 @@
               </a>
             </li>
             <li>
-              <a href="https://profile.indeed.com/p/ethelredojrp-3br0pwf" target="_blank">
+              <a
+                href="https://profile.indeed.com/p/ethelredojrp-3br0pwf"
+                target="_blank">
                 <svg
                   class="hire_me_icon"
                   fill="#ffffff"
@@ -999,7 +1011,9 @@
               </a>
             </li>
             <li>
-              <a href="skype:live:.cid.8a7eeb4b0aae0d51?userinfo" target="_blank">
+              <a
+                href="skype:live:.cid.8a7eeb4b0aae0d51?userinfo"
+                target="_blank">
                 <svg
                   class="hire_me_icon"
                   width="90px"
