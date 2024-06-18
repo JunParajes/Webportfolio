@@ -22,5 +22,5 @@ export const toggleFlipJs = () => {
 
 export const toggleFlipDc = () => {
   const cardDc = document.getElementById("flipCardInnerDc");
-  cardJs.classList.toggle("flipped");
+  cardDc.classList.toggle("flipped");
 }

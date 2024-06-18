@@ -42,49 +42,6 @@
   display: none;
 }
 
-/* END Of Base Styeling */
 
-/* Responsive Styles */
-@media (min-width: 475px) {
-  .logo {
-    width: 2rem;
-    margin-left: 1.5rem;
-  }
-}
 
-@media (min-width: 640px) {
-  .logo {
-    width: 3rem;
-  }
-}
 
-@media (min-width: 768px) {
-  .logo {
-    width: 3rem;
-    margin-left: 2.5rem;
-  }
-  
-  .nav_menu {
-    display: flex;
-    justify-content: flex-end;
-    gap: 2rem;
-    width: 75%;
-    list-style: none;
-    padding-right: 1.5rem;
-  }
-
-  .hamburgerMenu {
-    display: none;
-  }
-}
-
-@media (min-width: 1024px) {
-  .nav_menu {
-    gap: 4rem;
-    width: 70%;
-    padding-right: 5rem;
-  }
-}
-
-/* @media (min-width: 1280px) {} */
-/* @media (min-width: 1536px) {} */
