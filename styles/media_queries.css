@@ -121,17 +121,19 @@
     font-size: var(--size-6xl);
   }
 
-  .myName {
+  .myName {    
     font-size: var(--size-2xl);
   }
 }
 
 @media (min-width: 1280px) {
+
   .title {
     font-size: var(--size-8xl);
   }
 
   .myName {
+    margin-top: 15rem;
     font-size: var(--size-4xl);
     font-family: "Poppins", monospace;
   }
