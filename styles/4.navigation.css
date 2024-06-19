@@ -29,7 +29,8 @@
 
 .nav_btn {
   text-decoration: none;
-  color: var(--clr-white);
+  color: #7b7b7b;
+  transition: 0.3s;
 }
 
 .hamburgerMenu {
@@ -42,6 +43,10 @@
   display: none;
 }
 
+.nav_btn:hover {
+  color: var(--clr-white);
+  font-size: var(--size-xl);
+}
 
 
 
