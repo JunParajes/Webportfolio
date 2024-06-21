@@ -231,6 +231,9 @@
     width: 13rem;
     height: 13rem;
   }
+  .sub_heading_1 {
+    font-size: var(--size-2xl);
+  }
 }
 
 /* lg */
@@ -238,6 +241,9 @@
   .flip_card {
     width: 19rem;
     height: 19rem;
+  }
+  .sub_heading_1 {
+    font-size: var(--size-3xl);
   }
 }
 
